@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+.card {
+  background-color: white;
+  width: 20vw;
+  margin: 20vh auto;
+  padding: 12px;
+  border-radius: 12px;
+}
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+  text-align: center;
+  margin: 8px;
+}
+.description {
+  color: hsl(216, 15%, 48%);
+  text-align: center;
+  margin: 4px;
+  margin-bottom: 24px;
+}
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+footer,
+.card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+footer:hover {
+  transform: scale(1.1);
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 10px rgb(134, 158, 160);
+}
+
+/* mini devices */
+@media (max-width: 480px) {
+  .card {
+    width: 92vw;
+    height: 80vh;
+    margin: 10vh auto;
+  }
+  footer:hover {
+    transform: none;
+  }
+  .card:hover {
+    transform: none;
+  }
+}
+/* mini devices */
+
+/* regular devices */
+@media (481px <= width <= 767px) {
+  .card {
+    width: 60vw;
+    height: 80vh;
+    margin: 10vh auto;
+  }
+  footer:hover {
+    transform: none;
+  }
+  .card:hover {
+    transform: none;
+  }
+}
+/* regular devices */
+
+/* Tablets */
+@media (768px <= width <= 940px) {
+  .card {
+    width: 50vw;
+    height: 80vh;
+    margin: 10vh auto;
+  }
+}
+/* Tablets */
